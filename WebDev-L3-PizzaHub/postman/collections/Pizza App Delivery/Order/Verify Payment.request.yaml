@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/order/verify-payment"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"razorpay_order_Id\":\"\",\r
+
+    \    \"razorpay_payment_Id\":\"\",\r
+
+    \    \"razorpay_signature\":\"\"\r
+
+    }"
+order: 4435307961820997

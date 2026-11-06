@@ -1,0 +1,14 @@
+$kind: http-request
+name: Verify Email
+url: "{{baseUrl}}/auth/verify-email"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\":\"chandanmishra5193@gmail.com\",\r
+
+    \    \"otp\":\"687925\"\r
+
+    }"
+order: 976062083195145

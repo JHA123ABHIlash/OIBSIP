@@ -1,0 +1,28 @@
+$kind: http-request
+name: Create Pizza
+url: "{{baseUrl}}/pizza/create-pizza"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Corn Pizza\",\r
+
+    \  \"base\": \"Thin Crust\",\r
+
+    \  \"sauce\": \"Tomato\",\r
+
+    \  \"cheese\": \"Plain\",\r
+
+    \  \"vegetable\": [\"Onion\",\"Corn\"],\r
+
+    \  \"price\": 405,\r
+
+    \  \"image\": \"https://tse3.mm.bing.net/th/id/OIP.CljVPpWhs0yRFX8WDo3_awHaE8?r=0&pid=Api&h=220&P=0\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0z6u}}"
+order: 1790400387644

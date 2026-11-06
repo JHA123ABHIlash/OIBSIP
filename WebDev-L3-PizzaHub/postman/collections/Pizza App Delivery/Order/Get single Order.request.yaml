@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/order/get-order/6ab7b2124db74e1c9da8c8ac"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0657}}"
+order: 3012774197152477

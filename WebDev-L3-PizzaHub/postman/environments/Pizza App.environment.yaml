@@ -1,0 +1,4 @@
+name: Pizza App
+values:
+  - key: baseUrl
+    value: ''

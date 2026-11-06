@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{baseUrl}}/order/create-order"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"pizza\": \"6ab75fbea2d763409dfa8f5c\",\r
+
+    \      \"base\": \"Thin Crust\",\r
+
+    \      \"sauce\": \"Tomato\",\r
+
+    \      \"cheese\": \"Mozzarella\",\r
+
+    \      \"vegetables\": [\"Onion\",\"mushroom\"],\r
+
+    \      \"quantity\": 1\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0657}}"
+order: 1790405933069

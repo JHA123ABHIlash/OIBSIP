@@ -1,0 +1,9 @@
+$kind: http-request
+name: Get All Piza
+url: "{{baseUrl}}/pizza/get-all-pizza/"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0gfu}}"
+order: 3594015512064558

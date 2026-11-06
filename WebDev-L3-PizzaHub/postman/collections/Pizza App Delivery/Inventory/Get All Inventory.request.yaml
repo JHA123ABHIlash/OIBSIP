@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/inventory/get-all-inventory"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0z6u}}"
+order: 3360570491769197

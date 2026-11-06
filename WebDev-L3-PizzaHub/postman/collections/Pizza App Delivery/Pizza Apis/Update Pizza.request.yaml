@@ -1,0 +1,38 @@
+$kind: http-request
+name: Update Pizza
+url: "{{baseUrl}}/pizza/update-pizza/6ab75fbea2d763409dfa8f5c"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \ \"name\": \"Farmhouse Special\",\r
+
+    \    \"base\": \"Thin Crust\",\r
+
+    \    \"sauce\": \"Tomato\",\r
+
+    \    \"cheese\": \"Parmesan\",\r
+
+    \    \"vegetable\": [\r
+
+    \    \"Onion\",\r
+
+    \    \"Mushrooms\",\r
+
+    \    \"Tomatoes\",\r
+
+    \    \"Green bell peppers\"\r
+
+    \    ],\r
+
+    \    \"price\": 999,\r
+
+    \    \"image\": \"https://thumbs.dreamstime.com/b/mushroom-pizza-wild-mushrooms-truffle-oil-mozzarella-top-view-white-decadent-topped-melted-captured-background-381393643.jpg\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0u07}}"
+order: 4477400312357231

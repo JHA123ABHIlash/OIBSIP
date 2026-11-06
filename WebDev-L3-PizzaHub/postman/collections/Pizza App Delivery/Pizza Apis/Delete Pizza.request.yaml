@@ -1,0 +1,9 @@
+$kind: http-request
+name: Delete Pizza
+url: "{{baseUrl}}/pizza/delete-pizza/6ab760d0a2d763409dfa8f5d"
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0u07}}"
+order: 4488314499101976
